@@ -7,16 +7,40 @@ import SEO from "../components/seo"
 import Card from "../components/Card";
 import Section from "../components/Section";
 import Wave from "../components/Wave";
+import staticdata from '../../staticdata.json'
+import Cell from "../components/Cell";
+import styled from 'styled-components'
+
+const SectionCaption = styled.p`
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #94A4BA;
+  text-align: center;
+`
+
+const SectionCellGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="Hero">
       <div className="HeroGroup">
-        <h1>Hello World!</h1>
+        <h1>Hello!</h1>
         <p>Welcome to Yumei Jin's <br />learning-by-doing website <br />coded in React.</p>
         <p>Stay tuned!</p>
-        <Link to="/page-2/">Watch the video</Link>
+        <Link to="/page-2/">Subscribe to my mailing list</Link>
         <div className="Logos">
           <img src={require('../images/logo-sketch.png')} width="50" />
           <img src={require('../images/logo-figma.png')} width="50" />
@@ -52,8 +76,15 @@ const IndexPage = () => (
     <Section
       image={require('../images/wallpaper2.jpg')}
       logo={require('../images/logo-react.png')}
-      title="React for Designers"
-      text="Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify." />
+      title="I am Learning React"
+      text="Currently learning how to build a modern site using React and the most efficient libraries to get my site online, I am getting myself amiliar with components, Grid CSS, animations, interactions, dynamic data with Contentful and deploying my site with Netlify." 
+    />
+    <SectionCaption>Here's what I've learned</SectionCaption>
+    <SectionCellGroup>
+      {staticdata.cells.map(cell => (
+        <Cell title={cell.title} image={cell.image} />
+      ))}
+    </SectionCellGroup>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )

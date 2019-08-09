@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Learning with @designcodeio, Built with
+          © {new Date().getFullYear()}, Learning with @designcodeio, Built by Yumei Jin with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
