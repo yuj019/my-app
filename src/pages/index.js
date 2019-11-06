@@ -56,8 +56,8 @@ const IndexPage = () => (
       <h2>4 projects, more coming...</h2>
       <div className="CardGroup">
         <Card 
-          title="bi(OS)"
-          text="Business Intelligent Operating System for Enterprise"
+          title="Data Dashboard Design"
+          text="Smart Data Dashboard for Small Businesses"
           image={require('../images/wallpaper.jpg')} />
         <Card 
           title="TalkMeUp"
