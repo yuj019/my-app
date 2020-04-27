@@ -1,4 +1,5 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5da8cfcf-584f-4629-9dde-5fe09242bdb0/deploy-status)](https://app.netlify.com/sites/yumeijinreact1/deploys)
 
 <p align="center">
