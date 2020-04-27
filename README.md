@@ -1,4 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5da8cfcf-584f-4629-9dde-5fe09242bdb0/deploy-status)](https://app.netlify.com/sites/yumeijinreact1/deploys)
+
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
@@ -12,7 +14,6 @@ Kick off your project with this default boilerplate. This starter ships with the
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5da8cfcf-584f-4629-9dde-5fe09242bdb0/deploy-status)](https://app.netlify.com/sites/yumeijinreact1/deploys)
 
 ## 🚀 Quick start
 
