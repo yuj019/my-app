@@ -40,7 +40,7 @@ const IndexPage = () => (
         <h1>Hello!</h1>
         <p>Welcome to Yumei Jin's <br />learning-by-doing website <br />coded in React.</p>
         <p>Stay tuned!</p>
-        <Link to="/page-2/">Download my Resume</Link>
+        <Link to="/">Download my Resume</Link>
         <div className="Logos">
           <img src={require('../images/logo-sketch.png')} width="50" />
           <img src={require('../images/logo-figma.png')} width="50" />
@@ -85,7 +85,7 @@ const IndexPage = () => (
         <Cell title={cell.title} image={cell.image} />
       ))}
     </SectionCellGroup>
-    <Link to="/page-2/">Go to page 2</Link>
+
   </Layout>
 )
 
